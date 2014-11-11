@@ -113,6 +113,7 @@ plot(aggregatedStep2$steps, type='l',main=&quot;5-minute interval vs Avg no. of 
 <li>Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.</li>
 <li>Create a new dataset that is equal to the original dataset but with the missing data filled in.</li>
 </ul>
+<p><font color="red">The strategy is to use the mean for the particular 5 minute interval</font></p>
 <pre class="r"><code>#mean for that 5-minute interval
 #Reuse the &quot;data&quot; variable
 for (intIndex in 1:nrow(data)){
